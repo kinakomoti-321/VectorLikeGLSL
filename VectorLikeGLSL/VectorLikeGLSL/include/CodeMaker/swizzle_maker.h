@@ -82,7 +82,6 @@ namespace VectorLikeGLSL {
 		return "";
 	}
 
-
 	inline bool MakeVectorSwizzleCode(std::string filepath,int dim) {
 		std::ofstream file(filepath);
 
@@ -133,6 +132,56 @@ namespace VectorLikeGLSL {
 					for (int l = 0; l < DIM; ++l) {
 						std::string classname = GetFormatVectorSwizzle(4, i, j, k, l);
 						std::string swizzle = GetSwizzleXYZW(4, i, j, k, l);
+
+						file << classname << " " << swizzle << std::endl;
+					}
+				}
+			}
+		}
+
+		file << std::endl;
+
+		//RGBA
+		for (int i = 0; i < DIM; ++i) {
+			std::string classname = GetFormatVectorSwizzle(1, i);
+			std::string swizzle = GetSwizzleRGBA(1, i);
+
+			file << classname << " " << swizzle << std::endl;
+		}
+
+		file << std::endl;
+
+		for (int i = 0; i < DIM; ++i) {
+			for (int j = 0; j < DIM; ++j) {
+
+				std::string classname = GetFormatVectorSwizzle(2, i, j);
+				std::string swizzle = GetSwizzleRGBA(2, i, j);
+
+				file << classname << " " << swizzle << std::endl;
+			}
+		}
+
+		file << std::endl;
+
+		for (int i = 0; i < DIM; ++i) {
+			for (int j = 0; j < DIM; ++j) {
+				for (int k = 0; k < DIM; ++k) {
+					std::string classname = GetFormatVectorSwizzle(3, i, j, k);
+					std::string swizzle = GetSwizzleRGBA(3, i, j, k);
+
+					file << classname << " " << swizzle << std::endl;
+				}
+			}
+		}
+
+		file << std::endl;
+
+		for (int i = 0; i < DIM; ++i) {
+			for (int j = 0; j < DIM; ++j) {
+				for (int k = 0; k < DIM; ++k) {
+					for (int l = 0; l < DIM; ++l) {
+						std::string classname = GetFormatVectorSwizzle(4, i, j, k, l);
+						std::string swizzle = GetSwizzleRGBA(4, i, j, k, l);
 
 						file << classname << " " << swizzle << std::endl;
 					}

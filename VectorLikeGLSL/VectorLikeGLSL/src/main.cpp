@@ -3,6 +3,6 @@
 #include "../include/CodeMaker/code_maker.h"
 
 int main() {
-	VectorLikeGLSL::MakeVectorSwizzleCode("test.txt",4);
+	VectorLikeGLSL::MakeVectorSwizzleCode("test.txt",3);
 	return 0;
 }
