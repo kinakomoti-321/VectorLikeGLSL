@@ -7,6 +7,9 @@
     </ClCompile>
     <ClCompile Include="Vector\Vector2\test_vec2_swizzle.cpp" />
     <ClCompile Include="Vector\Vector4\test_vec4_swizzle.cpp" />
+    <ClCompile Include="Vector\Vector3\test_vec3_operator.cpp" />
+    <ClCompile Include="Vector\Vector2\test_vec2_operator.cpp" />
+    <ClCompile Include="Vector\Vector4\test_vec4_operator.cpp" />
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="pch.h" />

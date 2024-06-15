@@ -30,5 +30,58 @@ namespace VectorLikeGLSL {
 			v[1] = b;
 			v[2] = c;
 		}
+
 	};
+	
+	//--------------------------------------------------------------------------------
+	//Operators
+	//--------------------------------------------------------------------------------
+	inline vec3 operator+(const vec3& a, const vec3& b) {
+		return vec3(a.x + b.x, a.y + b.y, a.z + b.z);
+	}
+
+	inline vec3 operator-(const vec3& a, const vec3& b) {
+		return vec3(a.x - b.x, a.y - b.y, a.z - b.z);
+	}
+
+	inline vec3 operator*(const vec3& a, const vec3& b) {
+		return vec3(a.x * b.x, a.y * b.y, a.z * b.z);
+	}
+
+	inline vec3 operator/(const vec3& a, const vec3& b) {
+		return vec3(a.x / b.x, a.y / b.y, a.z / b.z);
+	}
+
+	inline vec3 operator+(const vec3& a, const float b) {
+		return vec3(a.x + b, a.y + b, a.z + b);
+	}
+
+	inline vec3 operator+(const float a, const vec3& b) {
+		return vec3(a + b.x, a + b.y, a + b.z);
+	}
+
+	inline vec3 operator-(const vec3& a, const float b) {
+		return vec3(a.x - b, a.y - b, a.z - b);
+	}
+
+	inline vec3 operator-(const float a, const vec3& b) {
+		return vec3(a - b.x, a - b.y, a - b.z);
+	}
+
+	inline vec3 operator*(const vec3& a, const float b) {
+		return vec3(a.x * b, a.y * b, a.z * b);
+	}
+
+	inline vec3 operator*(const float a, const vec3& b) {
+		return vec3(a * b.x, a * b.y, a * b.z);
+	}
+
+	inline vec3 operator/(const vec3& a, const float b) {
+		return vec3(a.x / b, a.y / b, a.z / b);
+	}
+
+	inline vec3 operator/(const float a, const vec3& b) {
+		return vec3(a / b.x, a / b.y, a / b.z);
+	}
+
 }

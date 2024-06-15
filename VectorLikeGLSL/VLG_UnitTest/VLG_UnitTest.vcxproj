@@ -107,8 +107,11 @@
       <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">Create</PrecompiledHeader>
       <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|x64'">Create</PrecompiledHeader>
     </ClCompile>
+    <ClCompile Include="Vector\Vector2\test_vec2_operator.cpp" />
+    <ClCompile Include="Vector\Vector3\test_vec3_operator.cpp" />
     <ClCompile Include="Vector\Vector3\test_vec3_swizzle.cpp" />
     <ClCompile Include="Vector\Vector2\test_vec2_swizzle.cpp" />
+    <ClCompile Include="Vector\Vector4\test_vec4_operator.cpp" />
     <ClCompile Include="Vector\Vector4\test_vec4_swizzle.cpp" />
   </ItemGroup>
   <ItemGroup>

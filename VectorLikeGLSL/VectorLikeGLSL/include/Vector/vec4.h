@@ -34,5 +34,56 @@ namespace VectorLikeGLSL {
 			v[3] = d;
 		}
 	};
+	
+	//--------------------------------------------------------------------------------
+	//Operators
+	//--------------------------------------------------------------------------------
+	inline vec4 operator+(const vec4& a, const vec4& b) {
+		return vec4(a.x + b.x, a.y + b.y, a.z + b.z, a.w + b.w);
+	}
+
+	inline vec4 operator-(const vec4& a, const vec4& b) {
+		return vec4(a.x - b.x, a.y - b.y, a.z - b.z, a.w - b.w);
+	}
+
+	inline vec4 operator*(const vec4& a, const vec4& b) {
+		return vec4(a.x * b.x, a.y * b.y, a.z * b.z, a.w * b.w);
+	}
+
+	inline vec4 operator/(const vec4& a, const vec4& b) {
+		return vec4(a.x / b.x, a.y / b.y, a.z / b.z, a.w / b.w);
+	}
+
+	inline vec4 operator+(const vec4& a, const float b) {
+		return vec4(a.x + b, a.y + b, a.z + b, a.w + b);
+	}
+
+	inline vec4 operator+(const float a, const vec4& b) {
+		return vec4(a + b.x, a + b.y, a + b.z, a + b.w);
+	}
+
+	inline vec4 operator-(const vec4& a, const float b) {
+		return vec4(a.x - b, a.y - b, a.z - b, a.w - b);
+	}
+
+	inline vec4 operator-(const float a, const vec4& b) {
+		return vec4(a - b.x, a - b.y, a - b.z, a - b.w);
+	}
+
+	inline vec4 operator*(const vec4& a, const float b) {
+		return vec4(a.x * b, a.y * b, a.z * b, a.w * b);
+	}
+
+	inline vec4 operator*(const float a, const vec4& b) {
+		return vec4(a * b.x, a * b.y, a * b.z, a * b.w);
+	}
+
+	inline vec4 operator/(const vec4& a, const float b) {
+		return vec4(a.x / b, a.y / b, a.z / b, a.w / b);
+	}
+
+	inline vec4 operator/(const float a, const vec4& b) {
+		return vec4(a / b.x, a / b.y, a / b.z, a / b.w);
+	}
 
 }

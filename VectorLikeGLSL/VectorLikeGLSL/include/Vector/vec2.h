@@ -28,4 +28,55 @@ namespace VectorLikeGLSL {
 			v[1] = y;
 		}
 	};
+
+	//--------------------------------------------------------------------------------
+	//Operators
+	//--------------------------------------------------------------------------------
+	inline vec2 operator+(const vec2& a, const vec2& b) {
+		return vec2(a.x + b.x, a.y + b.y);
+	}
+
+	inline vec2 operator-(const vec2& a, const vec2& b) {
+		return vec2(a.x - b.x, a.y - b.y);
+	}
+
+	inline vec2 operator*(const vec2& a, const vec2& b) {
+		return vec2(a.x * b.x, a.y * b.y);
+	}
+
+	inline vec2 operator/(const vec2& a, const vec2& b) {
+		return vec2(a.x / b.x, a.y / b.y);
+	}
+
+	inline vec2 operator+(const vec2& a, const float b) {
+		return vec2(a.x + b, a.y + b);
+	}
+
+	inline vec2 operator+(const float a, const vec2& b) {
+		return vec2(a + b.x, a + b.y);
+	}
+
+	inline vec2 operator-(const vec2& a, const float b) {
+		return vec2(a.x - b, a.y - b);
+	}
+
+	inline vec2 operator-(const float a, const vec2& b) {
+		return vec2(a - b.x, a - b.y);
+	}
+
+	inline vec2 operator*(const vec2& a, const float b) {
+		return vec2(a.x * b, a.y * b);
+	}
+
+	inline vec2 operator*(const float a, const vec2& b) {
+		return vec2(a * b.x, a * b.y);
+	}
+
+	inline vec2 operator/(const vec2& a, const float b) {
+		return vec2(a.x / b, a.y / b);
+	}
+
+	inline vec2 operator/(const float a, const vec2& b) {
+		return vec2(a / b.x, a / b.y);
+	}
 }
