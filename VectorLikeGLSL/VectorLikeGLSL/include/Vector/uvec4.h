@@ -23,5 +23,68 @@ namespace VectorLikeGLSL {
 			v[3] = w;
 		}
 	};
+	
+	inline uvec4 operator+(const uvec4& a, const uvec4& b) {
+		return uvec4(a.x + b.x, a.y + b.y, a.z + b.z, a.w + b.w);
+	}
 
+	inline uvec4 operator-(const uvec4& a, const uvec4& b) {
+		return uvec4(a.x - b.x, a.y - b.y, a.z - b.z, a.w - b.w);
+	}
+
+	inline uvec4 operator*(const uvec4& a, const uvec4& b) {
+		return uvec4(a.x * b.x, a.y * b.y, a.z * b.z, a.w * b.w);
+	}
+
+	inline uvec4 operator/(const uvec4& a, const uvec4& b) {
+		return uvec4(a.x / b.x, a.y / b.y, a.z / b.z, a.w / b.w);
+	}
+
+	inline uvec4 operator%(const uvec4& a, const uvec4& b) {
+		return uvec4(a.x % b.x, a.y % b.y, a.z % b.z, a.w % b.w);
+	}
+
+	inline uvec4 operator+(const uvec4& a, const unsigned int b) {
+		return uvec4(a.x + b, a.y + b, a.z + b, a.w + b);
+	}
+
+	inline uvec4 operator+(const unsigned int a, const uvec4& b) {
+		return uvec4(a + b.x, a + b.y, a + b.z, a + b.w);
+	}
+
+	inline uvec4 operator-(const uvec4& a, const unsigned int b) {
+		return uvec4(a.x - b, a.y - b, a.z - b, a.w - b);
+	}
+
+	inline uvec4 operator-(const unsigned int a, const uvec4& b) {
+		return uvec4(a - b.x, a - b.y, a - b.z, a - b.w);
+	}
+
+	inline uvec4 operator*(const uvec4& a, const unsigned int b) {
+		return uvec4(a.x * b, a.y * b, a.z * b, a.w * b);
+	}
+
+	inline uvec4 operator*(const unsigned int a, const uvec4& b) {
+		return uvec4(a * b.x, a * b.y, a * b.z, a * b.w);
+	}
+
+	inline uvec4 operator/(const uvec4& a, const unsigned int b) {
+		return uvec4(a.x / b, a.y / b, a.z / b, a.w / b);
+	}
+
+	inline uvec4 operator/(const unsigned int a, const uvec4& b) {
+		return uvec4(a / b.x, a / b.y, a / b.z, a / b.w);
+	}
+
+	inline uvec4 operator%(const uvec4& a, const unsigned int b) {
+		return uvec4(a.x % b, a.y % b, a.z % b, a.w % b);
+	}
+
+	inline uvec4 operator%(const unsigned int a, const uvec4& b) {
+		return uvec4(a % b.x, a % b.y, a % b.z, a % b.w);
+	}
+	
+	inline uvec4 operator-(const uvec4& a) {
+		return uvec4(-a.x, -a.y, -a.z, -a.w);
+	}
 }

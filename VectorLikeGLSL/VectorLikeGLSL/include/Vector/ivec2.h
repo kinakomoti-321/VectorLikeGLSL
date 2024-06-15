@@ -22,4 +22,69 @@ namespace VectorLikeGLSL {
 			v[1] = y;
 		}
 	};
+
+	inline ivec2 operator+(const ivec2& a, const ivec2& b) {
+		return ivec2(a.x + b.x, a.y + b.y);
+	}
+
+	inline ivec2 operator-(const ivec2& a, const ivec2& b) {
+		return ivec2(a.x - b.x, a.y - b.y);
+	}
+
+	inline ivec2 operator*(const ivec2& a, const ivec2& b) {
+		return ivec2(a.x * b.x, a.y * b.y);
+	}
+
+	inline ivec2 operator/(const ivec2& a, const ivec2& b) {
+		return ivec2(a.x / b.x, a.y / b.y);
+	}
+
+	inline ivec2 operator%(const ivec2& a, const ivec2& b) {
+		return ivec2(a.x % b.x, a.y % b.y);
+	}
+
+	inline ivec2 operator+(const ivec2& a, const int b) {
+		return ivec2(a.x + b, a.y + b);
+	}
+
+	inline ivec2 operator+(const int a, const ivec2& b) {
+		return ivec2(a + b.x, a + b.y);
+	}
+
+		
+	inline ivec2 operator-(const ivec2& a, const int b) {
+		return ivec2(a.x - b, a.y - b);
+	}
+
+	inline ivec2 operator-(const int a, const ivec2& b) {
+		return ivec2(a - b.x, a - b.y);
+	}
+
+	inline ivec2 operator*(const ivec2& a, const int b) {
+		return ivec2(a.x * b, a.y * b);
+	}
+
+	inline ivec2 operator*(const int a, const ivec2& b) {
+		return ivec2(a * b.x, a * b.y);
+	}
+
+	inline ivec2 operator/(const ivec2& a, const int b) {
+		return ivec2(a.x / b, a.y / b);
+	}
+
+	inline ivec2 operator/(const int a, const ivec2& b) {
+		return ivec2(a / b.x, a / b.y);
+	}
+
+	inline ivec2 operator%(const ivec2& a, const int b) {
+		return ivec2(a.x % b, a.y % b);
+	}
+
+	inline ivec2 operator%(const int a, const ivec2& b) {
+		return ivec2(a % b.x, a % b.y);
+	}
+
+	inline ivec2 operator-(const ivec2& a) {
+		return ivec2(-a.x, -a.y);
+	}
 }

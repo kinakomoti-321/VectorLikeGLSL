@@ -30,4 +30,70 @@ namespace VectorLikeGLSL {
 			v[2] = z;
 		}
 	};
+
+	inline ivec3 operator+(const ivec3& a, const ivec3& b) {
+		return ivec3(a.x + b.x, a.y + b.y, a.z + b.z);
+	}
+
+	inline ivec3 operator-(const ivec3& a, const ivec3& b) {
+		return ivec3(a.x - b.x, a.y - b.y, a.z - b.z);
+	}
+
+
+	inline ivec3 operator*(const ivec3& a, const ivec3& b) {
+		return ivec3(a.x * b.x, a.y * b.y, a.z * b.z);
+	}
+
+	inline ivec3 operator/(const ivec3& a, const ivec3& b) {
+		return ivec3(a.x / b.x, a.y / b.y, a.z / b.z);
+	}
+	
+	inline ivec3 operator%(const ivec3& a, const ivec3& b) {
+		return ivec3(a.x % b.x, a.y % b.y, a.z % b.z);
+	}
+
+	inline ivec3 operator+(const ivec3& a, const int b) {
+		return ivec3(a.x + b, a.y + b, a.z + b);
+	}
+
+	inline ivec3 operator+(const int a, const ivec3& b) {
+		return ivec3(a + b.x, a + b.y, a + b.z);
+	}
+
+	inline ivec3 operator-(const ivec3& a, const int b) {
+		return ivec3(a.x - b, a.y - b, a.z - b);
+	}
+
+	inline ivec3 operator-(const int a, const ivec3& b) {
+		return ivec3(a - b.x, a - b.y, a - b.z);
+	}
+
+	inline ivec3 operator*(const ivec3& a, const int b) {
+		return ivec3(a.x * b, a.y * b, a.z * b);
+	}
+
+	inline ivec3 operator*(const int a, const ivec3& b) {
+		return ivec3(a * b.x, a * b.y, a * b.z);
+	}
+
+	inline ivec3 operator/(const ivec3& a, const int b) {
+		return ivec3(a.x / b, a.y / b, a.z / b);
+	}
+
+	inline ivec3 operator/(const int a, const ivec3& b) {
+		return ivec3(a / b.x, a / b.y, a / b.z);
+	}
+
+	inline ivec3 operator%(const ivec3& a, const int b) {
+		return ivec3(a.x % b, a.y % b, a.z % b);
+	}
+	inline ivec3 operator%(const int a, const ivec3& b) {
+		return ivec3(a % b.x, a % b.y, a % b.z);
+	}
+
+	inline ivec3 operator-(const ivec3& a) {
+		return ivec3(-a.x, -a.y, -a.z);
+	}
+
+
 }

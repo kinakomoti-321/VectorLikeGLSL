@@ -19,4 +19,68 @@ namespace VectorLikeGLSL {
 			v[1] = y;
 		}
 	};
+
+	inline uvec2 operator+(const uvec2& a, const uvec2& b) {
+		return uvec2(a.x + b.x, a.y + b.y);
+	}
+
+	inline uvec2 operator-(const uvec2& a, const uvec2& b) {
+		return uvec2(a.x - b.x, a.y - b.y);
+	}
+
+	inline uvec2 operator*(const uvec2& a, const uvec2& b) {
+		return uvec2(a.x * b.x, a.y * b.y);
+	}
+
+	inline uvec2 operator/(const uvec2& a, const uvec2& b) {
+		return uvec2(a.x / b.x, a.y / b.y);
+	}
+
+	inline uvec2 operator%(const uvec2& a, const uvec2& b) {
+		return uvec2(a.x % b.x, a.y % b.y);
+	}
+
+	inline uvec2 operator+(const uvec2& a, const unsigned int b) {
+		return uvec2(a.x + b, a.y + b);
+	}
+
+	inline uvec2 operator+(const unsigned int a, const uvec2& b) {
+		return uvec2(a + b.x, a + b.y);
+	}
+
+	inline uvec2 operator-(const uvec2& a, const unsigned int b) {
+		return uvec2(a.x - b, a.y - b);
+	}
+
+	inline uvec2 operator-(const unsigned int a, const uvec2& b) {
+		return uvec2(a - b.x, a - b.y);
+	}
+
+	inline uvec2 operator*(const uvec2& a, const unsigned int b) {
+		return uvec2(a.x * b, a.y * b);
+	}
+
+	inline uvec2 operator*(const unsigned int a, const uvec2& b) {
+		return uvec2(a * b.x, a * b.y);
+	}
+
+	inline uvec2 operator/(const uvec2& a, const unsigned int b) {
+		return uvec2(a.x / b, a.y / b);
+	}
+
+	inline uvec2 operator/(const unsigned int a, const uvec2& b) {
+		return uvec2(a / b.x, a / b.y);
+	}
+
+	inline uvec2 operator%(const uvec2& a, const unsigned int b) {
+		return uvec2(a.x % b, a.y % b);
+	}
+
+	inline uvec2 operator%(const unsigned int a, const uvec2& b) {
+		return uvec2(a % b.x, a % b.y);
+	}
+
+	inline uvec2 operator-(const uvec2& a) {
+		return uvec2(-a.x, -a.y);
+	}
 }
