@@ -127,6 +127,9 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
+    <ClInclude Include="..\x64\Debug\bvec2_swizzle.h" />
+    <ClInclude Include="..\x64\Debug\bvec3_swizzle.h" />
+    <ClInclude Include="..\x64\Debug\bvec4_swizzle.h" />
     <ClInclude Include="include\CodeMaker\code_maker.h" />
     <ClInclude Include="include\CodeMaker\UnitTestCodeMaker\swizzle_testcode_maker.h" />
     <ClInclude Include="include\common\common.h" />
@@ -138,7 +141,22 @@
     <ClInclude Include="include\functions\pack_unpack.h" />
     <ClInclude Include="include\functions\trigonometry.h" />
     <ClInclude Include="include\functions\vector_relational.h" />
+    <ClInclude Include="include\Vector\bswizzles.h" />
+    <ClInclude Include="include\Vector\bvec2.h" />
+    <ClInclude Include="include\Vector\bvec2_swizzle.h" />
+    <ClInclude Include="include\Vector\bvec3.h" />
+    <ClInclude Include="include\Vector\bvec3_swizzle.h" />
+    <ClInclude Include="include\Vector\bvec4.h" />
+    <ClInclude Include="include\Vector\bvec4_swizzle.h" />
+    <ClInclude Include="include\Vector\iswizzles.h" />
+    <ClInclude Include="include\Vector\ivec2.h" />
+    <ClInclude Include="include\Vector\ivec3.h" />
+    <ClInclude Include="include\Vector\ivec4.h" />
     <ClInclude Include="include\Vector\swizzles.h" />
+    <ClInclude Include="include\Vector\uswizzles.h" />
+    <ClInclude Include="include\Vector\uvec2.h" />
+    <ClInclude Include="include\Vector\uvec3.h" />
+    <ClInclude Include="include\Vector\uvec4.h" />
     <ClInclude Include="include\Vector\vec2.h" />
     <ClInclude Include="include\Vector\vec2_swizzle.h" />
     <ClInclude Include="include\Vector\vec3.h" />
