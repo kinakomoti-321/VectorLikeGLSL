@@ -33,6 +33,26 @@ namespace VectorLikeGLSL {
 			v[0] = x;
 			v[1] = y;
 		}
+		
+		ivec2(const ivec2& a) {
+			v[0] = a.v[0];
+			v[1] = a.v[1];
+		}
+
+		ivec2(const ivec3& a);
+		ivec2(const ivec4& a);
+
+		ivec2(const vec2& a);
+		ivec2(const vec3& a);
+		ivec2(const vec4& a);
+
+		ivec2(const uvec2& a);
+		ivec2(const uvec3& a);
+		ivec2(const uvec4& a);
+
+		ivec2(const bvec2& a);
+		ivec2(const bvec3& a);
+		ivec2(const bvec4& a);
 	};
 
 
@@ -59,6 +79,31 @@ namespace VectorLikeGLSL {
 			v[1] = y;
 			v[2] = z;
 		}
+
+		ivec3(const ivec3& a) {
+			v[0] = a.v[0];
+			v[1] = a.v[1];
+			v[2] = a.v[2];
+		}
+
+		ivec3(const ivec2& a, int z);
+		ivec3(int x, const ivec2& b);
+		ivec3(const ivec4& a);
+
+		ivec3(const vec2& a, float z);
+		ivec3(float x, const vec2& b);
+		ivec3(const vec3& a);
+		ivec3(const vec4& a);
+
+		ivec3(const uvec2& a, unsigned int z);
+		ivec3(unsigned int x, const uvec2& b);
+		ivec3(const uvec3& a);
+		ivec3(const uvec4& a);
+
+		ivec3(const bvec2& a, bool z);
+		ivec3(bool x, const bvec2& b);
+		ivec3(const bvec3& a);
+		ivec3(const bvec4& a);
 	};
 
 	struct ivec4 {
@@ -87,7 +132,43 @@ namespace VectorLikeGLSL {
 			v[2] = z;
 			v[3] = w;
 		}
+		ivec4(const ivec4& a) {
+			v[0] = a.v[0];
+			v[1] = a.v[1];
+			v[2] = a.v[2];
+			v[3] = a.v[3];
+		}
 
+		ivec4(const ivec2& a, int z, int w);
+		ivec4(int x, const ivec2& b, int w);
+		ivec4(int x, int y, const ivec2& c);
+		ivec4(const ivec2& a, const ivec2& b);
+		ivec4(const ivec3& a, int w);
+		ivec4(int x, const ivec3& b);
+
+		ivec4(const vec2& a, float z, float w);
+		ivec4(float x, const vec2& b, float w);
+		ivec4(float x, float y, const vec2& c);
+		ivec4(const vec2& a, const vec2& b);
+		ivec4(const vec3& a, float w);
+		ivec4(float x, const vec3& b);
+		ivec4(const vec4& a);
+
+		ivec4(const uvec2& a, unsigned int z, unsigned int w);
+		ivec4(unsigned int x, const uvec2& b, unsigned int w);
+		ivec4(unsigned int x, unsigned int y, const uvec2& c);
+		ivec4(const uvec2& a, const uvec2& b);
+		ivec4(const uvec3& a, unsigned int w);
+		ivec4(unsigned int x, const uvec3& b);
+		ivec4(const uvec4& a);
+
+		ivec4(const bvec2& a, bool z, bool w);
+		ivec4(bool x, const bvec2& b, bool w);
+		ivec4(bool x, bool y, const bvec2& c);
+		ivec4(const bvec2& a, const bvec2& b);
+		ivec4(const bvec3& a, bool w);
+		ivec4(bool x, const bvec3& b);
+		ivec4(const bvec4& a);
 	};
 
 

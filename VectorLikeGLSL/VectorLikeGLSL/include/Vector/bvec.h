@@ -152,6 +152,14 @@ namespace VectorLikeGLSL {
 		bvec4(const ivec3& a, int b);
 		bvec4(int a, const ivec3& b);
 		bvec4(const ivec4& a);
+
+		bvec4(const uvec2& a, unsigned int b, unsigned int c);
+		bvec4(unsigned int a, const uvec2& b, unsigned int c);
+		bvec4(unsigned int a, unsigned int b, const uvec2& c);
+		bvec4(const uvec2& a, const uvec2& b);
+		bvec4(const uvec3& a, unsigned int b);
+		bvec4(unsigned int a, const uvec3& b);
+		bvec4(const uvec4& a);
 	};
 
 }
