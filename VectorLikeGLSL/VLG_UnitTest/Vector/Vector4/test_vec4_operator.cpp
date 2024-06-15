@@ -106,4 +106,13 @@ namespace Vector4 {
 		EXPECT_EQ(float(v3.z), 2.0f / 3.0f);
 		EXPECT_EQ(float(v3.w), 2.0f / 4.0f);
 	}
+
+	TEST(OperatorTest, Operator_Negative_Vec4) {
+		vec4 v1 = vec4(1.0f, 2.0f, 3.0f, 4.0f);
+		vec4 v2 = -v1;
+		EXPECT_EQ(float(v2.x), -1.0f);
+		EXPECT_EQ(float(v2.y), -2.0f);
+		EXPECT_EQ(float(v2.z), -3.0f);
+		EXPECT_EQ(float(v2.w), -4.0f);
+	}
 }

@@ -95,4 +95,12 @@ namespace Vector3 {
 		EXPECT_EQ(float(v3.y), 2.0f / 2.0f);
 		EXPECT_EQ(float(v3.z), 2.0f / 3.0f);
 	}
+
+	TEST(OperatorTest, Operator_Negative_Vec3) {
+		vec3 v1 = vec3(1.0f, 2.0f, 3.0f);
+		vec3 v2 = -v1;
+		EXPECT_EQ(float(v2.x), -1.0f);
+		EXPECT_EQ(float(v2.y), -2.0f);
+		EXPECT_EQ(float(v2.z), -3.0f);
+	}
 }

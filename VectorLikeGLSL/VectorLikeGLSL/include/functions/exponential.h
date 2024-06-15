@@ -4,7 +4,7 @@
 
 namespace VectorLikeGLSL {
 
-	float pow(const float x,const float y) {
+	inline float pow(const float x,const float y) {
 		return std::pow(x, y);
 	}
 

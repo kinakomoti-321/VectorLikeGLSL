@@ -79,4 +79,8 @@ namespace VectorLikeGLSL {
 	inline vec2 operator/(const float a, const vec2& b) {
 		return vec2(a / b.x, a / b.y);
 	}
+
+	inline vec2 operator-(const vec2& a) {
+		return vec2(-a.x, -a.y);
+	}
 }

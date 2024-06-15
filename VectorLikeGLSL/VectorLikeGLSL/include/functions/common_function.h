@@ -3,7 +3,7 @@
 #include "../common/common.h"
 #include "../Vector/vector.h"
 namespace VectorLikeGLSL {
-	float abs(const float x) {
+	inline float abs(const float x) {
 		return std::abs(x);
 	}
 
@@ -20,7 +20,7 @@ namespace VectorLikeGLSL {
 	}
 
 	inline float sign(const float x) {
-		return x > 0 ? 1 : x < 0 ? -1 : 0;
+		return x > 0.0f ? 1.0f : x < 0.0f ? -1.0f : 0.0f;
 	}
 
 	inline vec2 sign(const vec2& x) {
@@ -284,7 +284,7 @@ namespace VectorLikeGLSL {
 	}
 
 	inline float step(const float edge, const float x) {
-		return x < edge ? 0 : 1;
+		return x < edge ? 0.0f : 1.0f;
 	}
 
 	inline vec2 step(const vec2& edge, const vec2& x) {

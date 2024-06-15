@@ -82,4 +82,11 @@ namespace Vector2 {
 		EXPECT_EQ(float(v3.x), 2.0f / 1.0f);
 		EXPECT_EQ(float(v3.y), 2.0f / 2.0f);
 	}
+
+	TEST(OperatorTest, Operator_Negative_Vec2) {
+		vec2 v1 = vec2(1.0f, 2.0f);
+		vec2 v2 = -v1;
+		EXPECT_EQ(float(v2.x), -1.0f);
+		EXPECT_EQ(float(v2.y), -2.0f);
+	}
 }

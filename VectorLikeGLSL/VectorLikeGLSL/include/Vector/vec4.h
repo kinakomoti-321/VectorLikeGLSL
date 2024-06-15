@@ -85,5 +85,8 @@ namespace VectorLikeGLSL {
 	inline vec4 operator/(const float a, const vec4& b) {
 		return vec4(a / b.x, a / b.y, a / b.z, a / b.w);
 	}
-
+	
+	inline vec4 operator-(const vec4& a) {
+		return vec4(-a.x, -a.y, -a.z, -a.w);
+	}
 }

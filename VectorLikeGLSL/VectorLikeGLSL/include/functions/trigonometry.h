@@ -2,19 +2,19 @@
 #include "../common/common.h"
 #include "../Vector/vector.h"
 namespace VectorLikeGLSL {
-	float radians(float degree) {
+	inline float radians(float degree) {
 		return degree * DEGREES_TO_RADIANS;
 	}
 
-	vec2 radians(const vec2& degree) {
+	inline vec2 radians(const vec2& degree) {
 		return degree * DEGREES_TO_RADIANS;
 	}
 
-	vec3 radians(const vec3& degree) {
+	inline vec3 radians(const vec3& degree) {
 		return degree * DEGREES_TO_RADIANS;
 	}
 
-	vec4 radians(const vec4& degree) {
+	inline vec4 radians(const vec4& degree) {
 		return degree * DEGREES_TO_RADIANS;
 	}
 

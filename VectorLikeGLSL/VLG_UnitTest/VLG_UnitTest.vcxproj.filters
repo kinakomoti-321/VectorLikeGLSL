@@ -10,6 +10,7 @@
     <ClCompile Include="Vector\Vector3\test_vec3_operator.cpp" />
     <ClCompile Include="Vector\Vector2\test_vec2_operator.cpp" />
     <ClCompile Include="Vector\Vector4\test_vec4_operator.cpp" />
+    <ClCompile Include="Vector\Function\test_geometric.cpp" />
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="pch.h" />
