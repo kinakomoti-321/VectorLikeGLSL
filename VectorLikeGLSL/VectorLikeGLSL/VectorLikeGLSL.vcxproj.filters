@@ -18,16 +18,7 @@
     <ClInclude Include="include\vector_like_glsl.h">
       <Filter>Header Files</Filter>
     </ClInclude>
-    <ClInclude Include="include\Vector\vec3.h">
-      <Filter>Header Files</Filter>
-    </ClInclude>
-    <ClInclude Include="include\Vector\vec2.h">
-      <Filter>Header Files</Filter>
-    </ClInclude>
     <ClInclude Include="include\Vector\swizzles.h">
-      <Filter>Header Files</Filter>
-    </ClInclude>
-    <ClInclude Include="include\Vector\vec4.h">
       <Filter>Header Files</Filter>
     </ClInclude>
     <ClInclude Include="include\Vector\vector.h">
@@ -78,37 +69,10 @@
     <ClInclude Include="include\functions\integer.h">
       <Filter>Header Files</Filter>
     </ClInclude>
-    <ClInclude Include="include\Vector\bvec2.h">
-      <Filter>Header Files</Filter>
-    </ClInclude>
-    <ClInclude Include="include\Vector\bvec3.h">
-      <Filter>Header Files</Filter>
-    </ClInclude>
-    <ClInclude Include="include\Vector\bvec4.h">
-      <Filter>Header Files</Filter>
-    </ClInclude>
     <ClInclude Include="include\Vector\bswizzles.h">
       <Filter>Header Files</Filter>
     </ClInclude>
-    <ClInclude Include="include\Vector\ivec2.h">
-      <Filter>Header Files</Filter>
-    </ClInclude>
-    <ClInclude Include="include\Vector\ivec3.h">
-      <Filter>Header Files</Filter>
-    </ClInclude>
-    <ClInclude Include="include\Vector\ivec4.h">
-      <Filter>Header Files</Filter>
-    </ClInclude>
     <ClInclude Include="include\Vector\iswizzles.h">
-      <Filter>Header Files</Filter>
-    </ClInclude>
-    <ClInclude Include="include\Vector\uvec2.h">
-      <Filter>Header Files</Filter>
-    </ClInclude>
-    <ClInclude Include="include\Vector\uvec3.h">
-      <Filter>Header Files</Filter>
-    </ClInclude>
-    <ClInclude Include="include\Vector\uvec4.h">
       <Filter>Header Files</Filter>
     </ClInclude>
     <ClInclude Include="include\Vector\uswizzles.h">
@@ -151,6 +115,18 @@
       <Filter>Header Files</Filter>
     </ClInclude>
     <ClInclude Include="include\Vector\vector_cast.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="include\Vector\bvec.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="include\Vector\ivec.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="include\Vector\uvec.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="include\Vector\vec.h">
       <Filter>Header Files</Filter>
     </ClInclude>
   </ItemGroup>
