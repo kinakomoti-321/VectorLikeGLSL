@@ -2,8 +2,21 @@
 
 #include "./uswizzles.h"
 namespace VectorLikeGLSL {
+	struct vec2;
+	struct vec3;
+	struct vec4;
+
+	struct ivec2;
+	struct ivec3;
+	struct ivec4;
+
+	struct uvec2;
 	struct uvec3;
 	struct uvec4;
+
+	struct bvec2;
+	struct bvec3;
+	struct bvec4;
 
 	struct uvec2 {
 		union {
@@ -80,7 +93,7 @@ namespace VectorLikeGLSL {
 		return uvec2(a % b.x, a % b.y);
 	}
 
-	inline uvec2 operator-(const uvec2& a) {
-		return uvec2(-a.x, -a.y);
-	}
+	//inline uvec2 operator-(const uvec2& a) {
+	//	return uvec2(-a.x, -a.y);
+	//}
 }

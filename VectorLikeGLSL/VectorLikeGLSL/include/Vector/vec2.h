@@ -4,8 +4,21 @@
 
 namespace VectorLikeGLSL {
 
+	struct vec2;
 	struct vec3;
 	struct vec4;
+
+	struct ivec2;
+	struct ivec3;
+	struct ivec4;
+
+	struct uvec2;
+	struct uvec3;
+	struct uvec4;
+
+	struct bvec2;
+	struct bvec3;
+	struct bvec4;
 
 	struct vec2 {
 		union {
@@ -27,6 +40,26 @@ namespace VectorLikeGLSL {
 			v[0] = x;
 			v[1] = y;
 		}
+
+		vec2(const vec2& a) {
+			v[0] = a.v[0];
+			v[1] = a.v[1];
+		}
+
+		vec2(const vec3& a);
+		vec2(const vec4& a);
+
+		vec2(const ivec2& a);
+		vec2(const ivec3& a);
+		vec2(const ivec4& a);
+
+		vec2(const uvec2& a);
+		vec2(const uvec3& a);
+		vec2(const uvec4& a);
+
+		vec2(const bvec2& a);
+		vec2(const bvec3& a);
+		vec2(const bvec4& a);
 	};
 
 	//--------------------------------------------------------------------------------

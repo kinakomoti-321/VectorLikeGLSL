@@ -170,6 +170,7 @@
     <ClInclude Include="include\Vector\vec4.h" />
     <ClInclude Include="include\Vector\vec4_swizzle.h" />
     <ClInclude Include="include\Vector\vector.h" />
+    <ClInclude Include="include\Vector\vector_cast.h" />
     <ClInclude Include="include\vector_like_glsl.h" />
     <ClInclude Include="include\CodeMaker\swizzle_maker.h" />
   </ItemGroup>
