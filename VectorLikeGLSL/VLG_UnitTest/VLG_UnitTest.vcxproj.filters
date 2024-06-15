@@ -1,0 +1,36 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <ClCompile Include="test.cpp" />
+    <ClCompile Include="pch.cpp" />
+    <ClCompile Include="test_vec3_swizzle.cpp">
+      <Filter>Vector\Vector3</Filter>
+    </ClCompile>
+    <ClCompile Include="..\x64\Debug\test_vec2_swizzle.cpp">
+      <Filter>Vector\Vector2</Filter>
+    </ClCompile>
+    <ClCompile Include="..\x64\Debug\test_vec4_swizzle.cpp">
+      <Filter>Vector\Vector4</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="pch.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <Filter Include="Vector">
+      <UniqueIdentifier>{9fbe7c1f-627d-40e0-9526-dae98281c77f}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Vector\Vector3">
+      <UniqueIdentifier>{893e4631-c48e-4269-aef2-91ae11814901}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Vector\Vector2">
+      <UniqueIdentifier>{e2021e12-cc06-473d-a2cb-713d4dd5838b}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Vector\Vector4">
+      <UniqueIdentifier>{3b25b071-08a1-4083-afed-2ee2b8ff9024}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="packages.config" />
+  </ItemGroup>
+</Project>

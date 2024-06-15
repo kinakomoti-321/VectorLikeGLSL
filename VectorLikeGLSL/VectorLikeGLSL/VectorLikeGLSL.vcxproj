@@ -128,11 +128,15 @@
   </ItemDefinitionGroup>
   <ItemGroup>
     <ClInclude Include="include\CodeMaker\code_maker.h" />
+    <ClInclude Include="include\CodeMaker\UnitTestCodeMaker\swizzle_testcode_maker.h" />
     <ClInclude Include="include\common\common.h" />
-    <ClInclude Include="include\Vector\scalar.h" />
+    <ClInclude Include="include\Vector\swizzles.h" />
     <ClInclude Include="include\Vector\vec2.h" />
+    <ClInclude Include="include\Vector\vec2_swizzle.h" />
     <ClInclude Include="include\Vector\vec3.h" />
+    <ClInclude Include="include\Vector\vec3_swizzle.h" />
     <ClInclude Include="include\Vector\vec4.h" />
+    <ClInclude Include="include\Vector\vec4_swizzle.h" />
     <ClInclude Include="include\Vector\vector.h" />
     <ClInclude Include="include\vector_like_glsl.h" />
     <ClInclude Include="include\CodeMaker\swizzle_maker.h" />

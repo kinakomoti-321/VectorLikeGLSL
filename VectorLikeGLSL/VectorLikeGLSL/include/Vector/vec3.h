@@ -1,25 +1,16 @@
 #pragma once
 
-#include "./scalar.h"
-#include "./vec2.h"
-#include "./vec4.h"
+#include "./swizzles.h"
 
 namespace VectorLikeGLSL {
-
-	template<typename vec_type, unsigned int i0_, unsigned int i1_, unsigned int i2_>
-	struct Vector3_Swizzle {
-		float v[3];
-		vec_type operator=(const vec_type& vec) {
-			return vec_type(v[i0_] = vec.x, v[i1_] = vec.y, v[i2_] = vec.z);
-		}
-		operator vec_type() {
-			return vec_type(v[i0_], v[i1_], v[i2_]);
-		}
-	};
+	struct vec2;
+	struct vec4;
 
 	struct vec3 {
 		union {
 			float v[3];
+			//Vector4_Swizzle<vec4, 0, 0, 0, 0> xxxx;
+			#include "./vec3_swizzle.h"
 		};
 
 		vec3() {

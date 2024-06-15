@@ -24,7 +24,7 @@
     <ClInclude Include="include\Vector\vec2.h">
       <Filter>Header Files</Filter>
     </ClInclude>
-    <ClInclude Include="include\Vector\scalar.h">
+    <ClInclude Include="include\Vector\swizzles.h">
       <Filter>Header Files</Filter>
     </ClInclude>
     <ClInclude Include="include\Vector\vec4.h">
@@ -40,6 +40,18 @@
       <Filter>Header Files</Filter>
     </ClInclude>
     <ClInclude Include="include\CodeMaker\code_maker.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="include\CodeMaker\UnitTestCodeMaker\swizzle_testcode_maker.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="include\Vector\vec2_swizzle.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="include\Vector\vec3_swizzle.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="include\Vector\vec4_swizzle.h">
       <Filter>Header Files</Filter>
     </ClInclude>
   </ItemGroup>

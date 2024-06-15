@@ -82,7 +82,7 @@ namespace VectorLikeGLSL {
 		return "";
 	}
 
-	inline bool MakeVectorSwizzleCode(std::string filepath,int dim) {
+	inline bool MakeVectorSwizzleCode(std::string filepath, int dim) {
 		std::ofstream file(filepath);
 
 		if (!file.is_open()) {
@@ -96,7 +96,7 @@ namespace VectorLikeGLSL {
 			std::string classname = GetFormatVectorSwizzle(1, i);
 			std::string swizzle = GetSwizzleXYZW(1, i);
 
-			file << classname << " " << swizzle << std::endl;
+			file << classname << " " << swizzle << ";" << std::endl;
 		}
 
 		file << std::endl;
@@ -107,7 +107,7 @@ namespace VectorLikeGLSL {
 				std::string classname = GetFormatVectorSwizzle(2, i, j);
 				std::string swizzle = GetSwizzleXYZW(2, i, j);
 
-				file << classname << " " << swizzle << std::endl;
+				file << classname << " " << swizzle << ";" << std::endl;
 			}
 		}
 
@@ -119,7 +119,7 @@ namespace VectorLikeGLSL {
 					std::string classname = GetFormatVectorSwizzle(3, i, j, k);
 					std::string swizzle = GetSwizzleXYZW(3, i, j, k);
 
-					file << classname << " " << swizzle << std::endl;
+					file << classname << " " << swizzle << ";" << std::endl;
 				}
 			}
 		}
@@ -133,7 +133,8 @@ namespace VectorLikeGLSL {
 						std::string classname = GetFormatVectorSwizzle(4, i, j, k, l);
 						std::string swizzle = GetSwizzleXYZW(4, i, j, k, l);
 
-						file << classname << " " << swizzle << std::endl;
+
+						file << classname << " " << swizzle << ";" << std::endl;
 					}
 				}
 			}
@@ -146,7 +147,7 @@ namespace VectorLikeGLSL {
 			std::string classname = GetFormatVectorSwizzle(1, i);
 			std::string swizzle = GetSwizzleRGBA(1, i);
 
-			file << classname << " " << swizzle << std::endl;
+			file << classname << " " << swizzle << ";" << std::endl;
 		}
 
 		file << std::endl;
@@ -157,7 +158,7 @@ namespace VectorLikeGLSL {
 				std::string classname = GetFormatVectorSwizzle(2, i, j);
 				std::string swizzle = GetSwizzleRGBA(2, i, j);
 
-				file << classname << " " << swizzle << std::endl;
+				file << classname << " " << swizzle << ";" << std::endl;
 			}
 		}
 
@@ -169,7 +170,7 @@ namespace VectorLikeGLSL {
 					std::string classname = GetFormatVectorSwizzle(3, i, j, k);
 					std::string swizzle = GetSwizzleRGBA(3, i, j, k);
 
-					file << classname << " " << swizzle << std::endl;
+					file << classname << " " << swizzle << ";" << std::endl;
 				}
 			}
 		}
@@ -183,7 +184,7 @@ namespace VectorLikeGLSL {
 						std::string classname = GetFormatVectorSwizzle(4, i, j, k, l);
 						std::string swizzle = GetSwizzleRGBA(4, i, j, k, l);
 
-						file << classname << " " << swizzle << std::endl;
+						file << classname << " " << swizzle << ";" << std::endl;
 					}
 				}
 			}
