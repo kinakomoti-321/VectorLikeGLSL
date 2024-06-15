@@ -14,6 +14,7 @@ int main() {
 	//VectorLikeGLSL::MakeVectorSwizzleUnitTest("test_vec2_swizzle.cpp", 2);
 	//VectorLikeGLSL::MakeVectorSwizzleUnitTest("test_vec3_swizzle.cpp", 3);
 	//VectorLikeGLSL::MakeVectorSwizzleUnitTest("test_vec4_swizzle.cpp", 4);
+	
 
 
 	return 0;

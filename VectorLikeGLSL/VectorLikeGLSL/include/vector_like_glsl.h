@@ -2,4 +2,4 @@
 //Include this file
 
 #include "./Vector/vector.h"
-//#include "./functions/functions.h"
+#include "./functions/functions.h"

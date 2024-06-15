@@ -134,6 +134,7 @@
     <ClInclude Include="include\CodeMaker\UnitTestCodeMaker\swizzle_testcode_maker.h" />
     <ClInclude Include="include\common\common.h" />
     <ClInclude Include="include\functions\common_function.h" />
+    <ClInclude Include="include\functions\expo.h" />
     <ClInclude Include="include\functions\functions.h" />
     <ClInclude Include="include\functions\geometric.h" />
     <ClInclude Include="include\functions\integer.h" />
@@ -167,7 +168,6 @@
     <ClInclude Include="include\CodeMaker\swizzle_maker.h" />
   </ItemGroup>
   <ItemGroup>
-    <ClCompile Include="include\functions\exponential.h" />
     <ClCompile Include="src\main.cpp" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />

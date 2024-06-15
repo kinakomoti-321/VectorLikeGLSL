@@ -4,7 +4,7 @@
 
 namespace VectorLikeGLSL {
 
-	inline float pow(const float x,const float y) {
+	inline float pow(const float x, const float y) {
 		return std::pow(x, y);
 	}
 
@@ -116,3 +116,4 @@ namespace VectorLikeGLSL {
 		return vec4(1.0f / std::sqrt(x.x), 1.0f / std::sqrt(x.y), 1.0f / std::sqrt(x.z), 1.0f / std::sqrt(x.w));
 	}
 }
+
