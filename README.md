@@ -14,6 +14,8 @@ Swizzle Operator, Matrix(2x2,3x3,4x4), Build-in Function based GLSL4.50 are impl
 ## Usage
 VectorLikeGLSL/VectorLikeGLSL/include/vector_like_glsl.hをインクルードすれば使うことができます。
 
+You can use it by including VectorLikeGLSL/VectorLikeGLSL/include/vector_like_glsl.h.
+
 ```c++:example.cpp
 #include <iostream>
 #include "./vector_like_glsl.h"
@@ -41,6 +43,9 @@ int main() {
 ## Attention
 - Texture周りのBuild-in関数は実装されていません
 - GLSLのnot関数はNotという名称で実装されています(notはC++のキーワードに被るため)
+
+- Build-in functions around Texture are not implemented.
+- The GLSL "not" function is implemented under the name "Not" (because "not" is covered by the C++ keyword).
 
 ## TODOs
 - Common Function
