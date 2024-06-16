@@ -149,7 +149,7 @@
     </ClInclude>
   </ItemGroup>
   <ItemGroup>
-    <ClCompile Include="src\main.cpp">
+    <ClCompile Include="src\example.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
   </ItemGroup>
