@@ -232,15 +232,15 @@ namespace VectorLikeGLSL {
 		return x == y;
 	}
 
-	inline bvec2 equal(const ivec2& x, const ivec2& y) {
+	inline bvec2 equal(const uvec2& x, const uvec2& y) {
 		return bvec2(x.x == y.x, x.y == y.y);
 	}
 
-	inline bvec3 equal(const ivec3& x, const ivec3& y) {
+	inline bvec3 equal(const uvec3& x, const uvec3& y) {
 		return bvec3(x.x == y.x, x.y == y.y, x.z == y.z);
 	}
 
-	inline bvec4 equal(const ivec4& x, const ivec4& y) {
+	inline bvec4 equal(const uvec4& x, const uvec4& y) {
 		return bvec4(x.x == y.x, x.y == y.y, x.z == y.z, x.w == y.w);
 	}
 

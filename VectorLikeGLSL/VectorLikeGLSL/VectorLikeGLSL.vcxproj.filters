@@ -60,10 +60,7 @@
     <ClInclude Include="include\functions\geometric.h">
       <Filter>Header Files</Filter>
     </ClInclude>
-    <ClInclude Include="include\functions\vector_relational.h">
-      <Filter>Header Files</Filter>
-    </ClInclude>
-    <ClInclude Include="include\functions\matrix.h">
+    <ClInclude Include="include\functions\matrixfunc.h">
       <Filter>Header Files</Filter>
     </ClInclude>
     <ClInclude Include="include\functions\integer.h">
