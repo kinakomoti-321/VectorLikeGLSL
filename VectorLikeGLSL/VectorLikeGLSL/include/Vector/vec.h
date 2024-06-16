@@ -60,6 +60,7 @@ namespace VectorLikeGLSL {
 		vec2(const bvec2& a);
 		vec2(const bvec3& a);
 		vec2(const bvec4& a);
+
 	};
 
 	struct vec3 {
