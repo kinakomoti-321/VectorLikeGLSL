@@ -241,5 +241,6 @@ namespace VectorLikeGLSL {
 	inline vec4 atanh(const vec4& a) {
 		return vec4(std::atanh(a.x), std::atanh(a.y), std::atanh(a.z), std::atanh(a.w));
 	}
+
 }
 

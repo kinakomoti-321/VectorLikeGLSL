@@ -64,10 +64,9 @@ namespace VectorLikeGLSL {
 	//vec4 transform is not implemented, because it is used in only vertex shader.
 	//-----------------------------------------	
 
-	//TODO
-	//inline vec3 faceforward(const vec3& N, const vec3& I, const vec3& Nref) {
-	//	return dot(Nref, I) < 0 ? N : -N;
-	//}
+	inline vec3 faceforward(const vec3& N, const vec3& I, const vec3& Nref) {
+		return dot(Nref, I) < 0 ? N : -N;
+	}
 	
 	inline vec2 reflect(const vec2& I, const vec2& N) {
 		return I - 2.0f * dot(N, I) * N;

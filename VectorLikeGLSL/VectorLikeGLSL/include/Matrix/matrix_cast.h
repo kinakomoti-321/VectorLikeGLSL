@@ -26,7 +26,6 @@ namespace VectorLikeGLSL
 		m[1] = vec3(b.m[1].x, b.m[1].y, b.m[1].z);
 		m[2] = vec3(b.m[2].x, b.m[2].y, b.m[2].z);
 	}
-	
 
 	inline mat4::mat4(const mat2& a) {
 		m[0] = vec4(a.m[0].x, a.m[0].y, 0.0f, 0.0f);

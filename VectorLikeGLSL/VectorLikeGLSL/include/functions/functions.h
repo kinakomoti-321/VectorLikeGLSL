@@ -9,5 +9,5 @@
 #include "common_function.h"
 #include "pack_unpack.h"
 
-#include "matrix.h"
+#include "matrixfunc.h"
 #include "vector_relational.h"
