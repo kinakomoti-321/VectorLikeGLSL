@@ -132,6 +132,12 @@
     <ClInclude Include="include\functions\expo.h">
       <Filter>Header Files</Filter>
     </ClInclude>
+    <ClInclude Include="include\functions\relational.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="include\Matrix\matrix2x2.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="src\main.cpp">

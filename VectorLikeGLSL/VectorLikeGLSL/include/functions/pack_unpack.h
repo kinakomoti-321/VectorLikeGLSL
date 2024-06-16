@@ -40,19 +40,19 @@ namespace VectorLikeGLSL {
 	}
 	
 	inline vec2 unpackUnorm2x16(unsigned int p) {
-		return vec2((p >> 16) & 0xFFFF, p & 0xFFFF) / 65535.0f;
+		return vec2(float((p >> 16) & 0xFFFF),float(p & 0xFFFF)) / 65535.0f;
 	}
 
 	inline vec2 unpackSnorm2x16(unsigned int p) {
-		return vec2((p >> 16) & 0xFFFF, p & 0xFFFF) / 32767.0f;
+		return vec2(float((p >> 16) & 0xFFFF),float(p & 0xFFFF)) / 32767.0f;
 	}
 
 	inline vec4 unpackUnorm4x8(unsigned int p) {
-		return vec4((p >> 24) & 0xFF, (p >> 16) & 0xFF, (p >> 8) & 0xFF, p & 0xFF) / 255.0f;
+		return vec4(float((p >> 24) & 0xFF), float((p >> 16) & 0xFF), float((p >> 8) & 0xFF),float(p & 0xFF)) / 255.0f;
 	}
 	
 	inline vec4 unpackSnorm4x8(unsigned int p) {
-		return vec4((p >> 24) & 0xFF, (p >> 16) & 0xFF, (p >> 8) & 0xFF, p & 0xFF) / 127.0f;
+		return vec4(float((p >> 24) & 0xFF), float((p >> 16) & 0xFF), float((p >> 8) & 0xFF), float(p & 0xFF)) / 127.0f;
 	}
 
 }

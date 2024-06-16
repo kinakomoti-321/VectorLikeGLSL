@@ -140,8 +140,10 @@
     <ClInclude Include="include\functions\integer.h" />
     <ClInclude Include="include\functions\matrix.h" />
     <ClInclude Include="include\functions\pack_unpack.h" />
+    <ClInclude Include="include\functions\relational.h" />
     <ClInclude Include="include\functions\trigonometry.h" />
     <ClInclude Include="include\functions\vector_relational.h" />
+    <ClInclude Include="include\Matrix\matrix2x2.h" />
     <ClInclude Include="include\Vector\bswizzles.h" />
     <ClInclude Include="include\Vector\bvec.h" />
     <ClInclude Include="include\Vector\bvec2_swizzle.h" />
