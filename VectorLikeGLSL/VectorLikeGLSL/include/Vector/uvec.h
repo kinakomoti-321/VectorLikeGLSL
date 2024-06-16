@@ -1,5 +1,6 @@
 #pragma once
 
+#include <iostream>
 #include "./uswizzles.h"
 namespace VectorLikeGLSL {
 	struct vec2;
@@ -215,6 +216,12 @@ namespace VectorLikeGLSL {
 	inline uvec2 operator%(const unsigned int a, const uvec2& b) {
 		return uvec2(a % b.x, a % b.y);
 	}
+	
+	inline std::ostream& operator<< (std::ostream& os, const uvec2& a) {
+		os << "(" << a.x << ", " << a.y << ")";
+		return os;
+	}
+
 	inline uvec3 operator+(const uvec3& a, const uvec3& b) {
 		return uvec3(a.x + b.x, a.y + b.y, a.z + b.z);
 	}
@@ -274,6 +281,12 @@ namespace VectorLikeGLSL {
 	inline uvec3 operator%(const unsigned int a, const uvec3& b) {
 		return uvec3(a % b.x, a % b.y, a % b.z);
 	}
+	
+	inline std::ostream& operator<< (std::ostream& os, const uvec3& a) {
+		os << "(" << a.x << ", " << a.y << ", " << a.z << ")";
+		return os;
+	}
+
 	inline uvec4 operator+(const uvec4& a, const uvec4& b) {
 		return uvec4(a.x + b.x, a.y + b.y, a.z + b.z, a.w + b.w);
 	}
@@ -333,4 +346,10 @@ namespace VectorLikeGLSL {
 	inline uvec4 operator%(const unsigned int a, const uvec4& b) {
 		return uvec4(a % b.x, a % b.y, a % b.z, a % b.w);
 	}
+
+	inline std::ostream& operator<< (std::ostream& os, const uvec4& a) {
+		os << "(" << a.x << ", " << a.y << ", " << a.z << ", " << a.w << ")";
+		return os;
+	}
+
 }

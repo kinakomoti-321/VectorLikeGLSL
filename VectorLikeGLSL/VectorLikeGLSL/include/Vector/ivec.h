@@ -1,4 +1,5 @@
 #pragma once
+#include <iostream>
 #include "./iswizzles.h"
 
 namespace VectorLikeGLSL {
@@ -237,6 +238,11 @@ namespace VectorLikeGLSL {
 		return ivec2(-a.x, -a.y);
 	}
 
+	inline std::ostream& operator<< (std::ostream& os, const ivec2& a) {
+		os << "(" << a.x << ", " << a.y << ")";
+		return os;
+	}
+
 	inline ivec3 operator+(const ivec3& a, const ivec3& b) {
 		return ivec3(a.x + b.x, a.y + b.y, a.z + b.z);
 	}
@@ -301,6 +307,11 @@ namespace VectorLikeGLSL {
 		return ivec3(-a.x, -a.y, -a.z);
 	}
 
+	inline std::ostream& operator<< (std::ostream& os, const ivec3& a) {
+		os << "(" << a.x << ", " << a.y << ", " << a.z << ")";
+		return os;
+	}
+
 	inline ivec4 operator+(const ivec4& a, const ivec4& b) {
 		return ivec4(a.x + b.x, a.y + b.y, a.z + b.z, a.w + b.w);
 	}
@@ -358,5 +369,10 @@ namespace VectorLikeGLSL {
 
 	inline ivec4 operator-(const ivec4& a) {
 		return ivec4(-a.x, -a.y, -a.z, -a.w);
+	}
+
+	inline std::ostream& operator<< (std::ostream& os, const ivec4& a) {
+		os << "(" << a.x << ", " << a.y << ", " << a.z << ", " << a.w << ")";
+		return os;
 	}
 }

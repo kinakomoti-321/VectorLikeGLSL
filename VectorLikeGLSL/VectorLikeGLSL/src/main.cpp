@@ -18,7 +18,9 @@ int main() {
 	vec4 a = vec4(0.0);
 	bvec3 b = bvec3(true,false,false);
 	a = vec4(b,23.0);
-
-	std::cout << a.x << " " << a.y << " " << a.z << " " << a.w << std::endl;
+	a.xy = vec2(1.0, 1.0);
+	a.xy = ivec2(1,2);
+	
+	std::cout << a << std::endl;
 	return 0;
 }

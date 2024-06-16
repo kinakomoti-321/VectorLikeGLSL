@@ -1,4 +1,5 @@
 #pragma once
+#include <iostream>
 #include "./bswizzles.h"
 
 namespace VectorLikeGLSL {
@@ -162,4 +163,18 @@ namespace VectorLikeGLSL {
 		bvec4(const uvec4& a);
 	};
 
+	inline std::ostream& operator<<(std::ostream& os, const bvec2& a) {
+		os << "bvec2(" << a.x << ", " << a.y << ")";
+		return os;
+	}
+
+	inline std::ostream& operator<<(std::ostream& os, const bvec3& a) {
+		os << "bvec3(" << a.x << ", " << a.y << ", " << a.z << ")";
+		return os;
+	}
+
+	inline std::ostream& operator<<(std::ostream& os, const bvec4& a) {
+		os << "bvec4(" << a.x << ", " << a.y << ", " << a.z << ", " << a.w << ")";
+		return os;
+	}
 }
