@@ -90,18 +90,18 @@ namespace VectorLikeGLSL {
 		vec3(const float a, const vec2& b);
 		vec3(const vec4& a);
 
-		vec3(const ivec2& a, int b);
-		vec3(const int a, const ivec2& b);
+		vec3(const ivec2& a, float b);
+		vec3(const float a, const ivec2& b);
 		vec3(const ivec3& a);
 		vec3(const ivec4& a);
 
-		vec3(const uvec2& a, unsigned int b);
-		vec3(const unsigned int a, const uvec2& b);
+		vec3(const uvec2& a, float b);
+		vec3(const float a, const uvec2& b);
 		vec3(const uvec3& a);
 		vec3(const uvec4& a);
 
-		vec3(const bvec2& a, bool b);
-		vec3(bool a, const bvec2& b);
+		vec3(const bvec2& a, float b);
+		vec3(float a, const bvec2& b);
 		vec3(const bvec3& a);
 		vec3(const bvec4& a);
 	};
@@ -146,28 +146,28 @@ namespace VectorLikeGLSL {
 		vec4(const vec3& a, float b);
 		vec4(float a, const vec3& b);
 
-		vec4(const ivec2& a, int b, int c);
-		vec4(int a, const ivec2& b, int c);
-		vec4(int a, int b, const ivec2& c);
+		vec4(const ivec2& a, float b, float c);
+		vec4(float a, const ivec2& b, float c);
+		vec4(float a, float b, const ivec2& c);
 		vec4(const ivec2& a, const ivec2& b);
-		vec4(const ivec3& a, int b);
-		vec4(int a, const ivec3& b);
+		vec4(const ivec3& a, float b);
+		vec4(float a, const ivec3& b);
 		vec4(const ivec4& a);
 
-		vec4(const uvec2& a, unsigned int b, unsigned int c);
-		vec4(unsigned int a, const uvec2& b, unsigned int c);
-		vec4(unsigned int a, unsigned int b, const uvec2& c);
+		vec4(const uvec2& a, float b, float c);
+		vec4(float a, const uvec2& b, float c);
+		vec4(float a, float b, const uvec2& c);
 		vec4(const uvec2& a, const uvec2& b);
-		vec4(const uvec3& a, unsigned int b);
-		vec4(unsigned int a, const uvec3& b);
+		vec4(const uvec3& a, float b);
+		vec4(float a, const uvec3& b);
 		vec4(const uvec4& a);
 
-		vec4(const bvec2& a, bool b, bool c);
-		vec4(bool a, const bvec2& b, bool c);
-		vec4(bool a, bool b, const bvec2& c);
+		vec4(const bvec2& a, float b, float c);
+		vec4(float a, const bvec2& b, float c);
+		vec4(float a, float b, const bvec2& c);
 		vec4(const bvec2& a, const bvec2& b);
-		vec4(const bvec3& a, bool b);
-		vec4(bool a, const bvec3& b);
+		vec4(const bvec3& a, float b);
+		vec4(float a, const bvec3& b);
 		vec4(const bvec4& a);
 	};
 
