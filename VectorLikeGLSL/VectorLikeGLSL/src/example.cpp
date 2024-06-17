@@ -17,5 +17,10 @@ int main() {
 
 	std::cout << v4 << std::endl;
 	
+	mat2 m = mat2(1,2,3,4);
+
+	std::cout << m[1][1]<< std::endl;
+	
+
 	return 0;
 }

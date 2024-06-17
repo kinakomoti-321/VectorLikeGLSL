@@ -45,6 +45,30 @@ namespace VectorLikeGLSL {
 
 		mat4(const mat2& a);
 		mat4(const mat3& b);
+
+		vec4 operator[](const int i) const {
+			return m[i];
+		}
+		vec4& operator[](const int i) {
+			return m[i];
+		}
+
+		mat4& operator+=(const mat4 & a) {
+			m[0] += a.m[0];
+			m[1] += a.m[1];
+			m[2] += a.m[2];
+			m[3] += a.m[3];
+			return *this;
+		}
+
+		mat4& operator-=(const mat4& a) {
+			m[0] -= a.m[0];
+			m[1] -= a.m[1];
+			m[2] -= a.m[2];
+			m[3] -= a.m[3];
+			return *this;
+		}
+
 	};
 
 	inline mat4 operator +(const mat4& a, const mat4& b) {

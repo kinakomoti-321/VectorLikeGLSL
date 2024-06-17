@@ -38,7 +38,29 @@ namespace VectorLikeGLSL {
 			m[1] = a.m[1];
 			return *this;
 		}
-	
+
+
+		vec2 operator[](const int i) const {
+			return m[i];
+		}
+
+		vec2& operator[](const int i) {
+			return m[i];
+		}
+
+		mat2 operator +=(const mat2& a) {
+			m[0] += a.m[0];
+			m[1] += a.m[1];
+			return *this;
+		}
+
+		mat2 operator -=(const mat2& a) {
+			m[0] -= a.m[0];
+			m[1] -= a.m[1];
+			return *this;
+		}
+
+
 	};
 
 	inline mat2 operator +(const mat2& a, const mat2& b) {
@@ -61,7 +83,7 @@ namespace VectorLikeGLSL {
 		return mat2(a * b.m[0], a * b.m[1]);
 	}
 
-	inline mat2 operator /(const mat2 & a, const float b) {
+	inline mat2 operator /(const mat2& a, const float b) {
 		return mat2(a.m[0] / b, a.m[1] / b);
 	}
 
