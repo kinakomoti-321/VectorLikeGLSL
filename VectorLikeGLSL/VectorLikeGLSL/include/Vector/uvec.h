@@ -52,6 +52,25 @@ namespace VectorLikeGLSL {
 		uvec2(const bvec2& a);
 		uvec2(const bvec3& a);
 		uvec2(const bvec4& a);
+
+		unsigned int operator[](int i) const {
+			return v[i];
+		}
+		unsigned int& operator[](int i) {
+			return v[i];
+		}
+		
+		uvec2 operator+=(const uvec2& a) {
+			v[0] += a.v[0];
+			v[1] += a.v[1];
+			return *this;
+		}
+
+		uvec2 operator-=(const uvec2& a) {
+			v[0] -= a.v[0];
+			v[1] -= a.v[1];
+			return *this;
+		}
 	};
 
 	struct uvec3 {
@@ -95,6 +114,28 @@ namespace VectorLikeGLSL {
 		uvec3(unsigned int x, const bvec2& b);
 		uvec3(const bvec3& a);
 		uvec3(const bvec4& a);
+		
+		unsigned int operator[](int i) const {
+			return v[i];
+		}
+
+		unsigned int& operator[](int i) {
+			return v[i];
+		}
+
+		uvec3 operator+=(const uvec3& a) {
+			v[0] += a.v[0];
+			v[1] += a.v[1];
+			v[2] += a.v[2];
+			return *this;
+		}
+
+		uvec3 operator-=(const uvec3& a) {
+			v[0] -= a.v[0];
+			v[1] -= a.v[1];
+			v[2] -= a.v[2];
+			return *this;
+		}
 
 	};
 
@@ -153,8 +194,30 @@ namespace VectorLikeGLSL {
 		uvec4(const bvec3& a, unsigned int w);
 		uvec4(unsigned int a, const bvec3& b);
 		uvec4(const bvec4& a);
+		
+		unsigned int operator[](int i) const {
+			return v[i];
+		}
 
+		unsigned int& operator[](int i) {
+			return v[i];
+		}
 
+		uvec4 operator+=(const uvec4& a) {
+			v[0] += a.v[0];
+			v[1] += a.v[1];
+			v[2] += a.v[2];
+			v[3] += a.v[3];
+			return *this;
+		}
+
+		uvec4 operator-=(const uvec4& a) {
+			v[0] -= a.v[0];
+			v[1] -= a.v[1];
+			v[2] -= a.v[2];
+			v[3] -= a.v[3];
+			return *this;
+		}
 	};
 
 	inline uvec2 operator+(const uvec2& a, const uvec2& b) {

@@ -44,6 +44,15 @@ namespace VectorLikeGLSL {
 		bvec2(const uvec2& a);
 		bvec2(const uvec3& a);
 		bvec2(const uvec4& a);
+		
+		bool operator[](unsigned int i) const {
+			return v[i];
+		}
+
+		bool& operator[](unsigned int i) {
+			return v[i];
+		}
+
 	};
 
 	struct bvec3 {
@@ -94,6 +103,14 @@ namespace VectorLikeGLSL {
 		bvec3(const bool a, const uvec2& b);
 		bvec3(const uvec3& a);
 		bvec3(const uvec4& a);
+
+		bool operator[](unsigned int i) const {
+			return v[i];
+		}
+
+		bool& operator[](unsigned int i) {
+			return v[i];
+		}
 	};
 
 	struct bvec4 {
@@ -161,6 +178,14 @@ namespace VectorLikeGLSL {
 		bvec4(const uvec3& a, bool b);
 		bvec4(bool a, const uvec3& b);
 		bvec4(const uvec4& a);
+
+		bool operator[](unsigned int i) const {
+			return v[i];
+		}
+
+		bool& operator[](unsigned int i) {
+			return v[i];
+		}
 	};
 
 	inline std::ostream& operator<<(std::ostream& os, const bvec2& a) {
